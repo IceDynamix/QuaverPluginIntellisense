@@ -135,10 +135,15 @@ def generateClass(className: str, path: str) -> str:
 
         for match in FUNCTION_REGEX.finditer(classTextContent):
             functionName = match.group('name')
-            paramNames = [
-                LUA_KEYWORD_AS_PARAM_REPLACEMENTS.get(param.group("name"), param.group("name"))
-                for param in PARAM_REGEX.finditer(match.group('params'))
-            ]
+            paramNames = []
+
+            for param in match.group('params').split(","):
+                paramMatch = PARAM_REGEX.match(param.strip())
+                if paramMatch is not None:
+                    keywordSafe = LUA_KEYWORD_AS_PARAM_REPLACEMENTS.get(
+                        paramMatch.group("name"), paramMatch.group("name"))
+                    paramNames.append(keywordSafe)
+
             lines.append(f"function {className}.{functionName}({', '.join(paramNames)}) end")
 
         return "\n".join(lines)

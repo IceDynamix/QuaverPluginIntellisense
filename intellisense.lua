@@ -1,4 +1,4 @@
--- LAST UPDATED: 2020-09-21
+-- LAST UPDATED: 2020-12-30
 
 -- ./ImGui.NET/src/ImGui.NET/Generated/ImGuiInputTextFlags.gen.cs
 imgui_input_text_flags = {
@@ -354,166 +354,166 @@ time_signature = {
 
 -- ./Quaver/Quaver.Shared/Scripting/ImGuiWrapper.cs
 function imgui.AcceptDragDropPayload(type) end
-function imgui.AcceptDragDropPayload(flags) end
+function imgui.AcceptDragDropPayload(type, flags) end
 function imgui.AlignTextToFramePadding() end
-function imgui.ArrowButton(dir) end
-function imgui.Begin(flags) end
+function imgui.ArrowButton(str_id, dir) end
+function imgui.Begin(name, flags) end
 function imgui.Begin(name) end
-function imgui.Begin(p_open) end
-function imgui.Begin(flags) end
+function imgui.Begin(name, p_open) end
+function imgui.Begin(name, p_open, flags) end
 function imgui.BeginChild(str_id) end
-function imgui.BeginChild(size) end
-function imgui.BeginChild(border) end
-function imgui.BeginChild(flags) end
+function imgui.BeginChild(str_id, size) end
+function imgui.BeginChild(str_id, size, border) end
+function imgui.BeginChild(str_id, size, border, flags) end
 function imgui.BeginChild(id) end
-function imgui.BeginChild(size) end
-function imgui.BeginChild(border) end
-function imgui.BeginChild(flags) end
-function imgui.BeginChildFrame(size) end
-function imgui.BeginChildFrame(flags) end
-function imgui.BeginCombo(preview_value) end
-function imgui.BeginCombo(flags) end
+function imgui.BeginChild(id, size) end
+function imgui.BeginChild(id, size, border) end
+function imgui.BeginChild(id, size, border, flags) end
+function imgui.BeginChildFrame(id, size) end
+function imgui.BeginChildFrame(id, size, flags) end
+function imgui.BeginCombo(label, preview_value) end
+function imgui.BeginCombo(label, preview_value, flags) end
 function imgui.BeginDragDropSource() end
 function imgui.BeginDragDropSource(flags) end
 function imgui.BeginDragDropTarget() end
 function imgui.BeginGroup() end
 function imgui.BeginMainMenuBar() end
 function imgui.BeginMenu(label) end
-function imgui.BeginMenu(enabled) end
+function imgui.BeginMenu(label, enabled) end
 function imgui.BeginMenuBar() end
 function imgui.BeginPopup(str_id) end
-function imgui.BeginPopup(flags) end
+function imgui.BeginPopup(str_id, flags) end
 function imgui.BeginPopupContextItem() end
 function imgui.BeginPopupContextItem(str_id) end
-function imgui.BeginPopupContextItem(mouse_button) end
+function imgui.BeginPopupContextItem(str_id, mouse_button) end
 function imgui.BeginPopupContextVoid() end
 function imgui.BeginPopupContextVoid(str_id) end
-function imgui.BeginPopupContextVoid(mouse_button) end
+function imgui.BeginPopupContextVoid(str_id, mouse_button) end
 function imgui.BeginPopupContextWindow() end
 function imgui.BeginPopupContextWindow(str_id) end
-function imgui.BeginPopupContextWindow(mouse_button) end
-function imgui.BeginPopupContextWindow(also_over_items) end
+function imgui.BeginPopupContextWindow(str_id, mouse_button) end
+function imgui.BeginPopupContextWindow(str_id, mouse_button, also_over_items) end
 function imgui.BeginPopupModal(name) end
-function imgui.BeginPopupModal(p_open) end
-function imgui.BeginPopupModal(flags) end
+function imgui.BeginPopupModal(name, p_open) end
+function imgui.BeginPopupModal(name, p_open, flags) end
 function imgui.BeginTabBar(str_id) end
-function imgui.BeginTabBar(flags) end
+function imgui.BeginTabBar(str_id, flags) end
 function imgui.BeginTabItem(label) end
-function imgui.BeginTabItem(p_open) end
-function imgui.BeginTabItem(flags) end
+function imgui.BeginTabItem(label, p_open) end
+function imgui.BeginTabItem(label, p_open, flags) end
 function imgui.BeginTooltip() end
 function imgui.Bullet() end
 function imgui.BulletText(fmt) end
 function imgui.Button(label) end
-function imgui.Button(size) end
+function imgui.Button(label, size) end
 function imgui.CalcItemWidth() end
 function imgui.CalcTextSize(text) end
 function imgui.CaptureKeyboardFromApp() end
 function imgui.CaptureKeyboardFromApp(want_capture_keyboard_value) end
 function imgui.CaptureMouseFromApp() end
 function imgui.CaptureMouseFromApp(want_capture_mouse_value) end
-function imgui.Checkbox(v) end
-function imgui.CheckboxFlags(flags_value) end
+function imgui.Checkbox(label, v) end
+function imgui.CheckboxFlags(label, flags, flags_value) end
 function imgui.CloseCurrentPopup() end
 function imgui.CollapsingHeader(label) end
-function imgui.CollapsingHeader(flags) end
-function imgui.CollapsingHeader(p_open) end
-function imgui.CollapsingHeader(flags) end
-function imgui.ColorButton(col) end
-function imgui.ColorButton(flags) end
-function imgui.ColorButton(size) end
-function imgui.ColorEdit3(col) end
-function imgui.ColorEdit3(flags) end
-function imgui.ColorEdit4(col) end
-function imgui.ColorEdit4(flags) end
-function imgui.ColorPicker3(col) end
-function imgui.ColorPicker3(flags) end
-function imgui.ColorPicker4(col) end
-function imgui.ColorPicker4(flags) end
-function imgui.ColorPicker4(ref_col) end
+function imgui.CollapsingHeader(label, flags) end
+function imgui.CollapsingHeader(label, p_open) end
+function imgui.CollapsingHeader(label, p_open, flags) end
+function imgui.ColorButton(desc_id, col) end
+function imgui.ColorButton(desc_id, col, flags) end
+function imgui.ColorButton(desc_id, col, flags, size) end
+function imgui.ColorEdit3(label, col) end
+function imgui.ColorEdit3(label, col, flags) end
+function imgui.ColorEdit4(label, col) end
+function imgui.ColorEdit4(label, col, flags) end
+function imgui.ColorPicker3(label, col) end
+function imgui.ColorPicker3(label, col, flags) end
+function imgui.ColorPicker4(label, col) end
+function imgui.ColorPicker4(label, col, flags) end
+function imgui.ColorPicker4(label, col, flags, ref_col) end
 function imgui.Columns() end
 function imgui.Columns(count) end
-function imgui.Columns(id) end
-function imgui.Columns(border) end
-function imgui.Combo(items_count) end
-function imgui.Combo(popup_max_height_in_items) end
-function imgui.Combo(items_separated_by_zeros) end
-function imgui.Combo(popup_max_height_in_items) end
+function imgui.Columns(count, id) end
+function imgui.Columns(count, id, border) end
+function imgui.Combo(label, current_item, items, items_count) end
+function imgui.Combo(label, current_item, items, items_count, popup_max_height_in_items) end
+function imgui.Combo(label, current_item, items_separated_by_zeros) end
+function imgui.Combo(label, current_item, items_separated_by_zeros, popup_max_height_in_items) end
 function imgui.CreateContext() end
 function imgui.CreateContext(shared_font_atlas) end
-function imgui.CreateVector2(y) end
-function imgui.CreateVector3(z) end
-function imgui.CreateVector4(z) end
-function imgui.DebugCheckVersionAndDataLayout(sz_drawvert) end
+function imgui.CreateVector2(x, y) end
+function imgui.CreateVector3(x, y, z) end
+function imgui.CreateVector4(w, x, y, z) end
+function imgui.DebugCheckVersionAndDataLayout(version_str, sz_io, sz_style, sz_vec2, sz_vec4, sz_drawvert) end
 function imgui.DestroyContext() end
 function imgui.DestroyContext(ctx) end
-function imgui.DragFloat(v) end
-function imgui.DragFloat(v_speed) end
-function imgui.DragFloat(v_min) end
-function imgui.DragFloat(v_max) end
-function imgui.DragFloat(format) end
-function imgui.DragFloat(power) end
-function imgui.DragFloat2(v) end
-function imgui.DragFloat2(v_speed) end
-function imgui.DragFloat2(v_min) end
-function imgui.DragFloat2(v_max) end
-function imgui.DragFloat2(format) end
-function imgui.DragFloat2(power) end
-function imgui.DragFloat3(v) end
-function imgui.DragFloat3(v_speed) end
-function imgui.DragFloat3(v_min) end
-function imgui.DragFloat3(v_max) end
-function imgui.DragFloat3(format) end
-function imgui.DragFloat3(power) end
-function imgui.DragFloat4(v) end
-function imgui.DragFloat4(v_speed) end
-function imgui.DragFloat4(v_min) end
-function imgui.DragFloat4(v_max) end
-function imgui.DragFloat4(format) end
-function imgui.DragFloat4(power) end
-function imgui.DragFloatRange2(v_current_max) end
-function imgui.DragFloatRange2(v_speed) end
-function imgui.DragFloatRange2(v_min) end
-function imgui.DragFloatRange2(v_max) end
-function imgui.DragFloatRange2(format) end
-function imgui.DragFloatRange2(format_max) end
-function imgui.DragFloatRange2(power) end
-function imgui.DragInt(v_max) end
-function imgui.DragInt(format) end
-function imgui.DragInt(v) end
-function imgui.DragInt(v_speed) end
-function imgui.DragInt(v_min) end
-function imgui.DragInt2(v) end
-function imgui.DragInt2(v_speed) end
-function imgui.DragInt2(v_min) end
-function imgui.DragInt2(v_max) end
-function imgui.DragInt2(format) end
-function imgui.DragInt3(v) end
-function imgui.DragInt3(v_speed) end
-function imgui.DragInt3(v_min) end
-function imgui.DragInt3(v_max) end
-function imgui.DragInt3(format) end
-function imgui.DragInt4(v) end
-function imgui.DragInt4(v_speed) end
-function imgui.DragInt4(v_min) end
-function imgui.DragInt4(v_max) end
-function imgui.DragInt4(format) end
-function imgui.DragIntRange2(v_current_max) end
-function imgui.DragIntRange2(v_speed) end
-function imgui.DragIntRange2(v_min) end
-function imgui.DragIntRange2(v_max) end
-function imgui.DragIntRange2(format) end
-function imgui.DragIntRange2(format_max) end
-function imgui.DragScalar(v_speed) end
-function imgui.DragScalar(v_min) end
-function imgui.DragScalar(v_max) end
-function imgui.DragScalar(format) end
-function imgui.DragScalar(power) end
-function imgui.DragScalarN(v_speed) end
-function imgui.DragScalarN(v_min) end
-function imgui.DragScalarN(v_max) end
-function imgui.DragScalarN(format) end
-function imgui.DragScalarN(power) end
+function imgui.DragFloat(label, v) end
+function imgui.DragFloat(label, v, v_speed) end
+function imgui.DragFloat(label, v, v_speed, v_min) end
+function imgui.DragFloat(label, v, v_speed, v_min, v_max) end
+function imgui.DragFloat(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragFloat(label, v, v_speed, v_min, v_max, format, power) end
+function imgui.DragFloat2(label, v) end
+function imgui.DragFloat2(label, v, v_speed) end
+function imgui.DragFloat2(label, v, v_speed, v_min) end
+function imgui.DragFloat2(label, v, v_speed, v_min, v_max) end
+function imgui.DragFloat2(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragFloat2(label, v, v_speed, v_min, v_max, format, power) end
+function imgui.DragFloat3(label, v) end
+function imgui.DragFloat3(label, v, v_speed) end
+function imgui.DragFloat3(label, v, v_speed, v_min) end
+function imgui.DragFloat3(label, v, v_speed, v_min, v_max) end
+function imgui.DragFloat3(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragFloat3(label, v, v_speed, v_min, v_max, format, power) end
+function imgui.DragFloat4(label, v) end
+function imgui.DragFloat4(label, v, v_speed) end
+function imgui.DragFloat4(label, v, v_speed, v_min) end
+function imgui.DragFloat4(label, v, v_speed, v_min, v_max) end
+function imgui.DragFloat4(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragFloat4(label, v, v_speed, v_min, v_max, format, power) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max, v_speed) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max, v_speed, v_min) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max, format) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max, format, format_max) end
+function imgui.DragFloatRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max, format, format_max, power) end
+function imgui.DragInt(label, v, v_speed, v_min, v_max) end
+function imgui.DragInt(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragInt(label, v) end
+function imgui.DragInt(label, v, v_speed) end
+function imgui.DragInt(label, v, v_speed, v_min) end
+function imgui.DragInt2(label, v) end
+function imgui.DragInt2(label, v, v_speed) end
+function imgui.DragInt2(label, v, v_speed, v_min) end
+function imgui.DragInt2(label, v, v_speed, v_min, v_max) end
+function imgui.DragInt2(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragInt3(label, v) end
+function imgui.DragInt3(label, v, v_speed) end
+function imgui.DragInt3(label, v, v_speed, v_min) end
+function imgui.DragInt3(label, v, v_speed, v_min, v_max) end
+function imgui.DragInt3(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragInt4(label, v) end
+function imgui.DragInt4(label, v, v_speed) end
+function imgui.DragInt4(label, v, v_speed, v_min) end
+function imgui.DragInt4(label, v, v_speed, v_min, v_max) end
+function imgui.DragInt4(label, v, v_speed, v_min, v_max, format) end
+function imgui.DragIntRange2(label, v_current_min, v_current_max) end
+function imgui.DragIntRange2(label, v_current_min, v_current_max, v_speed) end
+function imgui.DragIntRange2(label, v_current_min, v_current_max, v_speed, v_min) end
+function imgui.DragIntRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max) end
+function imgui.DragIntRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max, format) end
+function imgui.DragIntRange2(label, v_current_min, v_current_max, v_speed, v_min, v_max, format, format_max) end
+function imgui.DragScalar(label, data_type, v, v_speed) end
+function imgui.DragScalar(label, data_type, v, v_speed, v_min) end
+function imgui.DragScalar(label, data_type, v, v_speed, v_min, v_max) end
+function imgui.DragScalar(label, data_type, v, v_speed, v_min, v_max, format) end
+function imgui.DragScalar(label, data_type, v, v_speed, v_min, v_max, format, power) end
+function imgui.DragScalarN(label, data_type, v, components, v_speed) end
+function imgui.DragScalarN(label, data_type, v, components, v_speed, v_min) end
+function imgui.DragScalarN(label, data_type, v, components, v_speed, v_min, v_max) end
+function imgui.DragScalarN(label, data_type, v, components, v_speed, v_min, v_max, format) end
+function imgui.DragScalarN(label, data_type, v, components, v_speed, v_min, v_max, format, power) end
 function imgui.Dummy(size) end
 function imgui.End() end
 function imgui.EndChild() end
@@ -532,7 +532,7 @@ function imgui.EndTabItem() end
 function imgui.EndTooltip() end
 function imgui.GetClipboardText() end
 function imgui.GetColorU32(idx) end
-function imgui.GetColorU32(alpha_mul) end
+function imgui.GetColorU32(idx, alpha_mul) end
 function imgui.GetColorU32(col) end
 function imgui.GetColorU32(col) end
 function imgui.GetColumnIndex() end
@@ -566,11 +566,11 @@ function imgui.GetItemRectMax() end
 function imgui.GetItemRectMin() end
 function imgui.GetItemRectSize() end
 function imgui.GetKeyIndex(imgui_key) end
-function imgui.GetKeyPressedAmount(rate) end
+function imgui.GetKeyPressedAmount(key_index, repeat_delay, rate) end
 function imgui.GetMouseCursor() end
 function imgui.GetMouseDragDelta() end
 function imgui.GetMouseDragDelta(button) end
-function imgui.GetMouseDragDelta(lock_threshold) end
+function imgui.GetMouseDragDelta(button, lock_threshold) end
 function imgui.GetMousePos() end
 function imgui.GetMousePosOnOpeningCurrentPopup() end
 function imgui.GetOverlayDrawList() end
@@ -594,75 +594,75 @@ function imgui.GetWindowHeight() end
 function imgui.GetWindowPos() end
 function imgui.GetWindowSize() end
 function imgui.GetWindowWidth() end
-function imgui.Image(size) end
-function imgui.Image(uv0) end
-function imgui.Image(uv1) end
-function imgui.Image(tint_col) end
-function imgui.Image(border_col) end
-function imgui.ImageButton(size) end
-function imgui.ImageButton(uv0) end
-function imgui.ImageButton(uv1) end
-function imgui.ImageButton(frame_padding) end
-function imgui.ImageButton(bg_col) end
-function imgui.ImageButton(tint_col) end
+function imgui.Image(user_texture_id, size) end
+function imgui.Image(user_texture_id, size, uv0) end
+function imgui.Image(user_texture_id, size, uv0, uv1) end
+function imgui.Image(user_texture_id, size, uv0, uv1, tint_col) end
+function imgui.Image(user_texture_id, size, uv0, uv1, tint_col, border_col) end
+function imgui.ImageButton(user_texture_id, size) end
+function imgui.ImageButton(user_texture_id, size, uv0) end
+function imgui.ImageButton(user_texture_id, size, uv0, uv1) end
+function imgui.ImageButton(user_texture_id, size, uv0, uv1, frame_padding) end
+function imgui.ImageButton(user_texture_id, size, uv0, uv1, frame_padding, bg_col) end
+function imgui.ImageButton(user_texture_id, size, uv0, uv1, frame_padding, bg_col, tint_col) end
 function imgui.Indent() end
 function imgui.Indent(indent_w) end
-function imgui.InputDouble(step) end
-function imgui.InputDouble(step_fast) end
-function imgui.InputDouble(format) end
-function imgui.InputDouble(flags) end
-function imgui.InputDouble(v) end
-function imgui.InputFloat(v) end
-function imgui.InputFloat(step) end
-function imgui.InputFloat(step_fast) end
-function imgui.InputFloat(format) end
-function imgui.InputFloat(flags) end
-function imgui.InputFloat2(v) end
-function imgui.InputFloat2(format) end
-function imgui.InputFloat2(flags) end
-function imgui.InputFloat3(v) end
-function imgui.InputFloat3(format) end
-function imgui.InputFloat3(flags) end
-function imgui.InputFloat4(v) end
-function imgui.InputFloat4(format) end
-function imgui.InputFloat4(flags) end
-function imgui.InputInt(v) end
-function imgui.InputInt(step) end
-function imgui.InputInt(step_fast) end
-function imgui.InputInt(flags) end
-function imgui.InputInt2(v) end
-function imgui.InputInt2(flags) end
-function imgui.InputInt3(v) end
-function imgui.InputInt3(flags) end
-function imgui.InputInt4(v) end
-function imgui.InputInt4(flags) end
-function imgui.InputScalar(v) end
-function imgui.InputScalar(step) end
-function imgui.InputScalar(step_fast) end
-function imgui.InputScalar(format) end
-function imgui.InputScalar(flags) end
-function imgui.InputScalarN(components) end
-function imgui.InputScalarN(step) end
-function imgui.InputScalarN(step_fast) end
-function imgui.InputScalarN(format) end
-function imgui.InputScalarN(flags) end
-function imgui.InputText(buf_size) end
-function imgui.InputText(flags) end
-function imgui.InputText(callback) end
-function imgui.InputText(user_data) end
-function imgui.InputText(maxLength) end
-function imgui.InputText(flags) end
-function imgui.InputText(callback) end
-function imgui.InputText(user_data) end
-function imgui.InputText(buf_size) end
-function imgui.InputText(flags) end
-function imgui.InputText(callback) end
-function imgui.InputText(user_data) end
-function imgui.InputTextMultiline(size) end
-function imgui.InputTextMultiline(flags) end
-function imgui.InputTextMultiline(callback) end
-function imgui.InputTextMultiline(user_data) end
-function imgui.InvisibleButton(size) end
+function imgui.InputDouble(label, v, step) end
+function imgui.InputDouble(label, v, step, step_fast) end
+function imgui.InputDouble(label, v, step, step_fast, format) end
+function imgui.InputDouble(label, v, step, step_fast, format, flags) end
+function imgui.InputDouble(label, v) end
+function imgui.InputFloat(label, v) end
+function imgui.InputFloat(label, v, step) end
+function imgui.InputFloat(label, v, step, step_fast) end
+function imgui.InputFloat(label, v, step, step_fast, format) end
+function imgui.InputFloat(label, v, step, step_fast, format, flags) end
+function imgui.InputFloat2(label, v) end
+function imgui.InputFloat2(label, v, format) end
+function imgui.InputFloat2(label, v, format, flags) end
+function imgui.InputFloat3(label, v) end
+function imgui.InputFloat3(label, v, format) end
+function imgui.InputFloat3(label, v, format, flags) end
+function imgui.InputFloat4(label, v) end
+function imgui.InputFloat4(label, v, format) end
+function imgui.InputFloat4(label, v, format, flags) end
+function imgui.InputInt(label, v) end
+function imgui.InputInt(label, v, step) end
+function imgui.InputInt(label, v, step, step_fast) end
+function imgui.InputInt(label, v, step, step_fast, flags) end
+function imgui.InputInt2(label, v) end
+function imgui.InputInt2(label, v, flags) end
+function imgui.InputInt3(label, v) end
+function imgui.InputInt3(label, v, flags) end
+function imgui.InputInt4(label, v) end
+function imgui.InputInt4(label, v, flags) end
+function imgui.InputScalar(label, data_type, v) end
+function imgui.InputScalar(label, data_type, v, step) end
+function imgui.InputScalar(label, data_type, v, step, step_fast) end
+function imgui.InputScalar(label, data_type, v, step, step_fast, format) end
+function imgui.InputScalar(label, data_type, v, step, step_fast, format, flags) end
+function imgui.InputScalarN(label, data_type, v, components) end
+function imgui.InputScalarN(label, data_type, v, components, step) end
+function imgui.InputScalarN(label, data_type, v, components, step, step_fast) end
+function imgui.InputScalarN(label, data_type, v, components, step, step_fast, format) end
+function imgui.InputScalarN(label, data_type, v, components, step, step_fast, format, flags) end
+function imgui.InputText(label, buf, buf_size) end
+function imgui.InputText(label, buf, buf_size, flags) end
+function imgui.InputText(label, buf, buf_size, flags, callback) end
+function imgui.InputText(label, buf, buf_size, flags, callback, user_data) end
+function imgui.InputText(label, input, maxLength) end
+function imgui.InputText(label, input, maxLength, flags) end
+function imgui.InputText(label, input, maxLength, flags, callback) end
+function imgui.InputText(label, input, maxLength, flags, callback, user_data) end
+function imgui.InputText(label, buf, buf_size) end
+function imgui.InputText(label, buf, buf_size, flags) end
+function imgui.InputText(label, buf, buf_size, flags, callback) end
+function imgui.InputText(label, buf, buf_size, flags, callback, user_data) end
+function imgui.InputTextMultiline(label, input, maxLength, size) end
+function imgui.InputTextMultiline(label, input, maxLength, size, flags) end
+function imgui.InputTextMultiline(label, input, maxLength, size, flags, callback) end
+function imgui.InputTextMultiline(label, input, maxLength, size, flags, callback, user_data) end
+function imgui.InvisibleButton(str_id, size) end
 function imgui.IsAnyItemActive() end
 function imgui.IsAnyItemFocused() end
 function imgui.IsAnyItemHovered() end
@@ -679,40 +679,40 @@ function imgui.IsItemHovered(flags) end
 function imgui.IsItemVisible() end
 function imgui.IsKeyDown(user_key_index) end
 function imgui.IsKeyPressed(user_key_index) end
-function imgui.IsKeyPressed(rep) end
+function imgui.IsKeyPressed(user_key_index, rep) end
 function imgui.IsKeyReleased(user_key_index) end
 function imgui.IsMouseClicked(button) end
-function imgui.IsMouseClicked(rep) end
+function imgui.IsMouseClicked(button, rep) end
 function imgui.IsMouseDoubleClicked(button) end
 function imgui.IsMouseDown(button) end
 function imgui.IsMouseDragging() end
 function imgui.IsMouseDragging(button) end
-function imgui.IsMouseDragging(lock_threshold) end
-function imgui.IsMouseHoveringRect(r_max) end
-function imgui.IsMouseHoveringRect(clip) end
+function imgui.IsMouseDragging(button, lock_threshold) end
+function imgui.IsMouseHoveringRect(r_min, r_max) end
+function imgui.IsMouseHoveringRect(r_min, r_max, clip) end
 function imgui.IsMousePosValid() end
 function imgui.IsMousePosValid(mouse_pos) end
 function imgui.IsMouseReleased(button) end
 function imgui.IsPopupOpen(str_id) end
 function imgui.IsRectVisible(size) end
-function imgui.IsRectVisible(rect_max) end
+function imgui.IsRectVisible(rect_min, rect_max) end
 function imgui.IsWindowAppearing() end
 function imgui.IsWindowCollapsed() end
 function imgui.IsWindowFocused() end
 function imgui.IsWindowFocused(flags) end
 function imgui.IsWindowHovered() end
 function imgui.IsWindowHovered(flags) end
-function imgui.LabelText(fmt) end
-function imgui.ListBox(items_count) end
-function imgui.ListBox(height_in_items) end
+function imgui.LabelText(label, fmt) end
+function imgui.ListBox(label, current_item, items, items_count) end
+function imgui.ListBox(label, current_item, items, items_count, height_in_items) end
 function imgui.ListBoxFooter() end
 function imgui.ListBoxHeader(label) end
-function imgui.ListBoxHeader(size) end
-function imgui.ListBoxHeader(items_count) end
-function imgui.ListBoxHeader(height_in_items) end
+function imgui.ListBoxHeader(label, size) end
+function imgui.ListBoxHeader(label, items_count) end
+function imgui.ListBoxHeader(label, items_count, height_in_items) end
 function imgui.LoadIniSettingsFromDisk(ini_filename) end
 function imgui.LoadIniSettingsFromMemory(ini_data) end
-function imgui.LoadIniSettingsFromMemory(ini_size) end
+function imgui.LoadIniSettingsFromMemory(ini_data, ini_size) end
 function imgui.LogButtons() end
 function imgui.LogFinish() end
 function imgui.LogText(fmt) end
@@ -720,39 +720,39 @@ function imgui.LogToClipboard() end
 function imgui.LogToClipboard(max_depth) end
 function imgui.LogToFile() end
 function imgui.LogToFile(max_depth) end
-function imgui.LogToFile(filename) end
+function imgui.LogToFile(max_depth, filename) end
 function imgui.LogToTTY() end
 function imgui.LogToTTY(max_depth) end
 function imgui.MemAlloc(size) end
 function imgui.MemFree(ptr) end
-function imgui.MenuItem(enabled) end
+function imgui.MenuItem(label, enabled) end
 function imgui.MenuItem(label) end
-function imgui.MenuItem(shortcut) end
-function imgui.MenuItem(selected) end
-function imgui.MenuItem(enabled) end
-function imgui.MenuItem(p_selected) end
-function imgui.MenuItem(enabled) end
+function imgui.MenuItem(label, shortcut) end
+function imgui.MenuItem(label, shortcut, selected) end
+function imgui.MenuItem(label, shortcut, selected, enabled) end
+function imgui.MenuItem(label, shortcut, p_selected) end
+function imgui.MenuItem(label, shortcut, p_selected, enabled) end
 function imgui.NewFrame() end
 function imgui.NewLine() end
 function imgui.NextColumn() end
 function imgui.OpenPopup(str_id) end
 function imgui.OpenPopupOnItemClick() end
 function imgui.OpenPopupOnItemClick(str_id) end
-function imgui.OpenPopupOnItemClick(mouse_button) end
-function imgui.PlotHistogram(values_count) end
-function imgui.PlotHistogram(values_offset) end
-function imgui.PlotHistogram(overlay_text) end
-function imgui.PlotHistogram(scale_min) end
-function imgui.PlotHistogram(scale_max) end
-function imgui.PlotHistogram(graph_size) end
-function imgui.PlotHistogram(stride) end
-function imgui.PlotLines(values_count) end
-function imgui.PlotLines(values_offset) end
-function imgui.PlotLines(overlay_text) end
-function imgui.PlotLines(scale_min) end
-function imgui.PlotLines(scale_max) end
-function imgui.PlotLines(graph_size) end
-function imgui.PlotLines(stride) end
+function imgui.OpenPopupOnItemClick(str_id, mouse_button) end
+function imgui.PlotHistogram(label, values, values_count) end
+function imgui.PlotHistogram(label, values, values_count, values_offset) end
+function imgui.PlotHistogram(label, values, values_count, values_offset, overlay_text) end
+function imgui.PlotHistogram(label, values, values_count, values_offset, overlay_text, scale_min) end
+function imgui.PlotHistogram(label, values, values_count, values_offset, overlay_text, scale_min, scale_max) end
+function imgui.PlotHistogram(label, values, values_count, values_offset, overlay_text, scale_min, scale_max, graph_size) end
+function imgui.PlotHistogram(label, values, values_count, values_offset, overlay_text, scale_min, scale_max, graph_size, stride) end
+function imgui.PlotLines(label, values, values_count) end
+function imgui.PlotLines(label, values, values_count, values_offset) end
+function imgui.PlotLines(label, values, values_count, values_offset, overlay_text) end
+function imgui.PlotLines(label, values, values_count, values_offset, overlay_text, scale_min) end
+function imgui.PlotLines(label, values, values_count, values_offset, overlay_text, scale_min, scale_max) end
+function imgui.PlotLines(label, values, values_count, values_offset, overlay_text, scale_min, scale_max, graph_size) end
+function imgui.PlotLines(label, values, values_count, values_offset, overlay_text, scale_min, scale_max, graph_size, stride) end
 function imgui.PopAllowKeyboardFocus() end
 function imgui.PopButtonRepeat() end
 function imgui.PopClipRect() end
@@ -765,71 +765,71 @@ function imgui.PopStyleVar() end
 function imgui.PopStyleVar(count) end
 function imgui.PopTextWrapPos() end
 function imgui.ProgressBar(fraction) end
-function imgui.ProgressBar(size_arg) end
-function imgui.ProgressBar(overlay) end
+function imgui.ProgressBar(fraction, size_arg) end
+function imgui.ProgressBar(fraction, size_arg, overlay) end
 function imgui.PushAllowKeyboardFocus(allow_keyboard_focus) end
 function imgui.PushButtonRepeat(rep) end
-function imgui.PushClipRect(intersect_with_current_clip_rect) end
+function imgui.PushClipRect(clip_rect_min, clip_rect_max, intersect_with_current_clip_rect) end
 function imgui.PushFont(font) end
 function imgui.PushID(int_id) end
 function imgui.PushID(ptr_id) end
 function imgui.PushID(str_id) end
 function imgui.PushItemWidth(item_width) end
-function imgui.PushStyleColor(col) end
-function imgui.PushStyleColor(col) end
-function imgui.PushStyleVar(val) end
-function imgui.PushStyleVar(val) end
+function imgui.PushStyleColor(idx, col) end
+function imgui.PushStyleColor(idx, col) end
+function imgui.PushStyleVar(idx, val) end
+function imgui.PushStyleVar(idx, val) end
 function imgui.PushTextWrapPos() end
 function imgui.PushTextWrapPos(wrap_local_pos_x) end
-function imgui.RadioButton(active) end
-function imgui.RadioButton(v_button) end
+function imgui.RadioButton(label, active) end
+function imgui.RadioButton(label, v, v_button) end
 function imgui.Render() end
 function imgui.ResetMouseDragDelta() end
 function imgui.ResetMouseDragDelta(button) end
 function imgui.SameLine() end
 function imgui.SameLine(local_pos_x) end
-function imgui.SameLine(spacing_w) end
+function imgui.SameLine(local_pos_x, spacing_w) end
 function imgui.Selectable(label) end
-function imgui.Selectable(selected) end
-function imgui.Selectable(flags) end
-function imgui.Selectable(size) end
-function imgui.Selectable(p_selected) end
-function imgui.Selectable(flags) end
-function imgui.Selectable(size) end
+function imgui.Selectable(label, selected) end
+function imgui.Selectable(label, selected, flags) end
+function imgui.Selectable(label, selected, flags, size) end
+function imgui.Selectable(label, p_selected) end
+function imgui.Selectable(label, p_selected, flags) end
+function imgui.Selectable(label, p_selected, flags, size) end
 function imgui.Separator() end
 function imgui.SetClipboardText(text) end
 function imgui.SetColorEditOptions(flags) end
-function imgui.SetColumnOffset(offset_x) end
-function imgui.SetColumnWidth(width) end
+function imgui.SetColumnOffset(column_index, offset_x) end
+function imgui.SetColumnWidth(column_index, width) end
 function imgui.SetCurrentContext(ctx) end
 function imgui.SetCursorPos(local_pos) end
 function imgui.SetCursorPosX(local_x) end
 function imgui.SetCursorPosY(local_y) end
 function imgui.SetCursorScreenPos(pos) end
-function imgui.SetDragDropPayload(size) end
-function imgui.SetDragDropPayload(cond) end
+function imgui.SetDragDropPayload(type, data, size) end
+function imgui.SetDragDropPayload(type, data, size, cond) end
 function imgui.SetItemAllowOverlap() end
 function imgui.SetItemDefaultFocus() end
 function imgui.SetKeyboardFocusHere() end
 function imgui.SetKeyboardFocusHere(offset) end
 function imgui.SetMouseCursor(type) end
 function imgui.SetNextTreeNodeOpen(is_open) end
-function imgui.SetNextTreeNodeOpen(cond) end
+function imgui.SetNextTreeNodeOpen(is_open, cond) end
 function imgui.SetNextWindowBgAlpha(alpha) end
 function imgui.SetNextWindowCollapsed(collapsed) end
-function imgui.SetNextWindowCollapsed(cond) end
+function imgui.SetNextWindowCollapsed(collapsed, cond) end
 function imgui.SetNextWindowContentSize(size) end
 function imgui.SetNextWindowFocus() end
 function imgui.SetNextWindowPos(pos) end
-function imgui.SetNextWindowPos(cond) end
-function imgui.SetNextWindowPos(pivot) end
+function imgui.SetNextWindowPos(pos, cond) end
+function imgui.SetNextWindowPos(pos, cond, pivot) end
 function imgui.SetNextWindowSize(size) end
-function imgui.SetNextWindowSize(cond) end
-function imgui.SetNextWindowSizeConstraints(size_max) end
-function imgui.SetNextWindowSizeConstraints(custom_callback) end
-function imgui.SetNextWindowSizeConstraints(custom_callback_data) end
+function imgui.SetNextWindowSize(size, cond) end
+function imgui.SetNextWindowSizeConstraints(size_min, size_max) end
+function imgui.SetNextWindowSizeConstraints(size_min, size_max, custom_callback) end
+function imgui.SetNextWindowSizeConstraints(size_min, size_max, custom_callback, custom_callback_data) end
 function imgui.SetScrollFromPosY(local_y) end
-function imgui.SetScrollFromPosY(center_y_ratio) end
+function imgui.SetScrollFromPosY(local_y, center_y_ratio) end
 function imgui.SetScrollHereY() end
 function imgui.SetScrollHereY(center_y_ratio) end
 function imgui.SetScrollX(scroll_x) end
@@ -838,20 +838,20 @@ function imgui.SetStateStorage(storage) end
 function imgui.SetTabItemClosed(tab_or_docked_window_label) end
 function imgui.SetTooltip(fmt) end
 function imgui.SetWindowCollapsed(collapsed) end
-function imgui.SetWindowCollapsed(cond) end
-function imgui.SetWindowCollapsed(collapsed) end
-function imgui.SetWindowCollapsed(cond) end
+function imgui.SetWindowCollapsed(collapsed, cond) end
+function imgui.SetWindowCollapsed(name, collapsed) end
+function imgui.SetWindowCollapsed(name, collapsed, cond) end
 function imgui.SetWindowFocus() end
 function imgui.SetWindowFocus(name) end
 function imgui.SetWindowFontScale(scale) end
+function imgui.SetWindowPos(name, pos) end
+function imgui.SetWindowPos(name, pos, cond) end
 function imgui.SetWindowPos(pos) end
-function imgui.SetWindowPos(cond) end
-function imgui.SetWindowPos(pos) end
-function imgui.SetWindowPos(cond) end
+function imgui.SetWindowPos(pos, cond) end
+function imgui.SetWindowSize(name, size) end
+function imgui.SetWindowSize(name, size, cond) end
 function imgui.SetWindowSize(size) end
-function imgui.SetWindowSize(cond) end
-function imgui.SetWindowSize(size) end
-function imgui.SetWindowSize(cond) end
+function imgui.SetWindowSize(size, cond) end
 function imgui.ShowAboutWindow() end
 function imgui.ShowAboutWindow(p_open) end
 function imgui.ShowDemoWindow() end
@@ -863,36 +863,36 @@ function imgui.ShowStyleEditor() end
 function imgui.ShowStyleEditor(ptr) end
 function imgui.ShowStyleSelector(label) end
 function imgui.ShowUserGuide() end
-function imgui.SliderAngle(v_rad) end
-function imgui.SliderAngle(v_degrees_min) end
-function imgui.SliderAngle(v_degrees_max) end
-function imgui.SliderAngle(format) end
-function imgui.SliderFloat(v_max) end
-function imgui.SliderFloat(format) end
-function imgui.SliderFloat(power) end
-function imgui.SliderFloat2(v_max) end
-function imgui.SliderFloat2(format) end
-function imgui.SliderFloat2(power) end
-function imgui.SliderFloat3(v_max) end
-function imgui.SliderFloat3(format) end
-function imgui.SliderFloat3(power) end
-function imgui.SliderFloat4(power) end
-function imgui.SliderFloat4(v_max) end
-function imgui.SliderFloat4(format) end
-function imgui.SliderInt(v_max) end
-function imgui.SliderInt(format) end
-function imgui.SliderInt2(v_max) end
-function imgui.SliderInt2(format) end
-function imgui.SliderInt3(v_max) end
-function imgui.SliderInt3(format) end
-function imgui.SliderInt4(v_max) end
-function imgui.SliderInt4(format) end
-function imgui.SliderScalar(v_max) end
-function imgui.SliderScalar(format) end
-function imgui.SliderScalar(power) end
-function imgui.SliderScalarN(v_max) end
-function imgui.SliderScalarN(format) end
-function imgui.SliderScalarN(power) end
+function imgui.SliderAngle(label, v_rad) end
+function imgui.SliderAngle(label, v_rad, v_degrees_min) end
+function imgui.SliderAngle(label, v_rad, v_degrees_min, v_degrees_max) end
+function imgui.SliderAngle(label, v_rad, v_degrees_min, v_degrees_max, format) end
+function imgui.SliderFloat(label, v, v_min, v_max) end
+function imgui.SliderFloat(label, v, v_min, v_max, format) end
+function imgui.SliderFloat(label, v, v_min, v_max, format, power) end
+function imgui.SliderFloat2(label, v, v_min, v_max) end
+function imgui.SliderFloat2(label, v, v_min, v_max, format) end
+function imgui.SliderFloat2(label, v, v_min, v_max, format, power) end
+function imgui.SliderFloat3(label, v, v_min, v_max) end
+function imgui.SliderFloat3(label, v, v_min, v_max, format) end
+function imgui.SliderFloat3(label, v, v_min, v_max, format, power) end
+function imgui.SliderFloat4(label, v, v_min, v_max, format, power) end
+function imgui.SliderFloat4(label, v, v_min, v_max) end
+function imgui.SliderFloat4(label, v, v_min, v_max, format) end
+function imgui.SliderInt(label, v, v_min, v_max) end
+function imgui.SliderInt(label, v, v_min, v_max, format) end
+function imgui.SliderInt2(label, v, v_min, v_max) end
+function imgui.SliderInt2(label, v, v_min, v_max, format) end
+function imgui.SliderInt3(label, v, v_min, v_max) end
+function imgui.SliderInt3(label, v, v_min, v_max, format) end
+function imgui.SliderInt4(label, v, v_min, v_max) end
+function imgui.SliderInt4(label, v, v_min, v_max, format) end
+function imgui.SliderScalar(label, data_type, v, v_min, v_max) end
+function imgui.SliderScalar(label, data_type, v, v_min, v_max, format) end
+function imgui.SliderScalar(label, data_type, v, v_min, v_max, format, power) end
+function imgui.SliderScalarN(label, data_type, v, components, v_min, v_max) end
+function imgui.SliderScalarN(label, data_type, v, components, v_min, v_max, format) end
+function imgui.SliderScalarN(label, data_type, v, components, v_min, v_max, format, power) end
 function imgui.SmallButton(label) end
 function imgui.Spacing() end
 function imgui.StyleColorsClassic() end
@@ -902,37 +902,37 @@ function imgui.StyleColorsDark(dst) end
 function imgui.StyleColorsLight() end
 function imgui.StyleColorsLight(dst) end
 function imgui.Text(fmt) end
-function imgui.TextColored(fmt) end
+function imgui.TextColored(col, fmt) end
 function imgui.TextDisabled(fmt) end
 function imgui.TextUnformatted(text) end
 function imgui.TextWrapped(fmt) end
 function imgui.TreeAdvanceToLabelPos() end
-function imgui.TreeNode(fmt) end
+function imgui.TreeNode(ptr_id, fmt) end
 function imgui.TreeNode(label) end
-function imgui.TreeNode(fmt) end
-function imgui.TreeNodeEx(fmt) end
+function imgui.TreeNode(str_id, fmt) end
+function imgui.TreeNodeEx(ptr_id, flags, fmt) end
 function imgui.TreeNodeEx(label) end
-function imgui.TreeNodeEx(flags) end
-function imgui.TreeNodeEx(fmt) end
+function imgui.TreeNodeEx(label, flags) end
+function imgui.TreeNodeEx(str_id, flags, fmt) end
 function imgui.TreePop() end
 function imgui.TreePush() end
 function imgui.TreePush(ptr_id) end
 function imgui.TreePush(str_id) end
 function imgui.Unindent() end
 function imgui.Unindent(indent_w) end
-function imgui.Value(b) end
-function imgui.Value(v) end
-function imgui.Value(v) end
-function imgui.Value(v) end
-function imgui.Value(float_format) end
-function imgui.VSliderFloat(v_max) end
-function imgui.VSliderFloat(format) end
-function imgui.VSliderFloat(power) end
-function imgui.VSliderInt(v_max) end
-function imgui.VSliderInt(format) end
-function imgui.VSliderScalar(v_max) end
-function imgui.VSliderScalar(format) end
-function imgui.VSliderScalar(power) end
+function imgui.Value(prefix, b) end
+function imgui.Value(prefix, v) end
+function imgui.Value(prefix, v) end
+function imgui.Value(prefix, v) end
+function imgui.Value(prefix, v, float_format) end
+function imgui.VSliderFloat(label, size, v, v_min, v_max) end
+function imgui.VSliderFloat(label, size, v, v_min, v_max, format) end
+function imgui.VSliderFloat(label, size, v, v_min, v_max, format, power) end
+function imgui.VSliderInt(label, size, v, v_min, v_max) end
+function imgui.VSliderInt(label, size, v, v_min, v_max, format) end
+function imgui.VSliderScalar(label, size, data_type, v, v_min, v_max) end
+function imgui.VSliderScalar(label, size, data_type, v, v_min, v_max, format) end
+function imgui.VSliderScalar(label, size, data_type, v, v_min, v_max, format, power) end
 
 -- ./Quaver/Quaver.Shared/Scripting/LuaPluginState.cs
 state.DeltaTime = 0.0 -- double
@@ -941,20 +941,24 @@ state.IsWindowHovered = false -- bool
 state.Values = {} -- Dictionary<string, object>
 state.WindowSize = {} -- Vector2
 function state.GetValue(key) end
-function state.SetValue(value) end
+function state.SetValue(key, value) end
 
 -- ./Quaver/Quaver.Shared/Screens/Edit/Plugins/EditorPluginState.cs
 state.SongTime = 0.0 -- double
 state.SelectedHitObjects = {} -- List<HitObjectInfo>
 state.CurrentTimingPoint = {} -- TimingPointInfo
+state.CurrentLayer = {} -- EditorLayerInfo
 state.CurrentSnap = 0 -- int
 function state.PushImguiStyle() end
 
 -- ./Quaver/Quaver.Shared/Screens/Edit/Plugins/EditorPluginMap.cs
 map.Mode = game_mode.Keys4 -- GameMode
+map.Normalized = false -- bool
 map.ScrollVelocities = {} -- List<SliderVelocityInfo>
 map.HitObjects = {} -- List<HitObjectInfo>
 map.TimingPoints = {} -- List<TimingPointInfo>
+map.EditorLayers = {} -- List<EditorLayerInfo>
+map.DefaultLayer = {} -- EditorLayerInfo
 map.TrackLength = 0.0 -- double
 function map.ToString() end
 function map.GetKeyCount(includeScratch) end
@@ -962,14 +966,14 @@ function map.GetCommonBpm() end
 function map.GetTimingPointAt(time) end
 function map.GetScrollVelocityAt(time) end
 function map.GetTimingPointLength(point) end
-function map.GetNearestSnapTimeFromTime(time) end
+function map.GetNearestSnapTimeFromTime(forwards, snap, time) end
 
 -- ./Quaver/Quaver.Shared/Screens/Edit/Plugins/EditorPluginUtils.cs
-function utils.CreateScrollVelocity(multiplier) end
-function utils.CreateHitObject(endTime, hitsounds, editorLayer) end
-function utils.CreateTimingPoint(signature) end
+function utils.CreateScrollVelocity(time, multiplier) end
+function utils.CreateHitObject(startTime, lane, endTime, hitsounds, editorLayer) end
+function utils.CreateTimingPoint(startTime, bpm, signature) end
+function utils.CreateEditorLayer(name, hidden, colorRgb) end
 function utils.MillisecondsToTime(time) end
-function utils.OpenUrl(forceNormalBrowser) end
 function utils.IsKeyPressed(k) end
 function utils.IsKeyReleased(k) end
 function utils.IsKeyDown(k) end
@@ -977,11 +981,11 @@ function utils.IsKeyUp(k) end
 
 -- ./Quaver/Quaver.Shared/Screens/Edit/Actions/EditorPluginActionManager.cs
 function actions.PlaceHitObject(h) end
-function actions.PlaceHitObject(endTime, layer, hitsounds) end
+function actions.PlaceHitObject(lane, startTime, endTime, layer, hitsounds) end
 function actions.PlaceHitObjectBatch(hitObjects) end
 function actions.RemoveHitObject(h) end
 function actions.RemoveHitObjectBatch(hitObjects) end
-function actions.ResizeLongNote(time) end
+function actions.ResizeLongNote(h, originalTime, time) end
 function actions.PlaceScrollVelocity(sv) end
 function actions.PlaceScrollVelocityBatch(svs) end
 function actions.RemoveScrollVelocity(sv) end
@@ -990,15 +994,22 @@ function actions.PlaceTimingPoint(tp) end
 function actions.RemoveTimingPoint(tp) end
 function actions.PlaceTimingPointBatch(tps) end
 function actions.RemoveTimingPointBatch(tps) end
-function actions.ChangeTimingPointOffset(offset) end
-function actions.ChangeTimingPointBpm(bpm) end
-function actions.ChangeTimingPointBpmBatch(bpm) end
-function actions.ChangeTimingPointOffsetBatch(offset) end
+function actions.ChangeTimingPointOffset(tp, offset) end
+function actions.ChangeTimingPointBpm(tp, bpm) end
+function actions.ChangeTimingPointBpmBatch(tps, bpm) end
+function actions.ChangeTimingPointOffsetBatch(tps, offset) end
 function actions.ResetTimingPoint(tp) end
 function actions.GoToObjects(input) end
 function actions.SetHitObjectSelection(hitObjects) end
 function actions.DetectBpm() end
 function actions.SetPreviewTime(time) end
+function actions.CreateLayer(layer) end
+function actions.RemoveLayer(layer) end
+function actions.RenameLayer(layer, name) end
+function actions.MoveHitObjectsToLayer(layer, hitObjects) end
+function actions.ChangeLayerColor(layer, r, g, b) end
+function actions.ToggleLayerVisibility(layer) end
+function actions.ResnapNotes(snaps, hitObjectsToResnap) end
 
 -- ./Quaver/Wobble/MonoGame/MonoGame.Framework/Input/Keys.cs
 keys = {
