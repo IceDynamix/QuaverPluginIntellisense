@@ -39,7 +39,8 @@ ENUMS = [
     # quaver
     ("game_mode", QUAVER_ENUM_DIR + "GameMode.cs"),
     ("hitsounds", QUAVER_ENUM_DIR + "Hitsounds.cs"),
-    ("time_signature", QUAVER_ENUM_DIR + "TimeSignature.cs")
+    ("time_signature", QUAVER_ENUM_DIR + "TimeSignature.cs"),
+    ("action_type", QUAVER_SHARED + "Screens/Edit/Actions/EditorActionType.cs")
     # keys isn't listed here since it uses its own function to convert
 ]
 

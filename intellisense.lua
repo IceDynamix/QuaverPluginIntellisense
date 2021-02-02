@@ -352,6 +352,46 @@ time_signature = {
     Triple = 3,
 }
 
+-- ./Quaver/Quaver.Shared/Screens/Edit/Actions/EditorActionType.cs
+action_type = {
+    None = -1,
+    PlaceHitObject,
+    RemoveHitObject,
+    ResizeLongNote,
+    RemoveHitObjectBatch,
+    PlaceHitObjectBatch,
+    FlipHitObjects,
+    MoveHitObjects,
+    AddHitsound,
+    RemoveHitsound,
+    CreateLayer,
+    RemoveLayer,
+    RenameLayer,
+    MoveToLayer,
+    ColorLayer,
+    ToggleLayerVisibility,
+    AddScrollVelocity,
+    RemoveScrollVelocity,
+    AddScrollVelocityBatch,
+    RemoveScrollVelocityBatch,
+    AddTimingPoint,
+    RemoveTimingPoint,
+    AddTimingPointBatch,
+    RemoveTimingPointBatch,
+    ChangePreviewTime,
+    ChangeTimingPointOffset,
+    ChangeTimingPointBpm,
+    ChangeTimingPointHidden,
+    ResetTimingPoint,
+    ChangeTimingPointBpmBatch,
+    ChangeTimingPointOffsetBatch,
+    ChangeScrollVelocityOffsetBatch,
+    ChangeScrollVelocityMultiplierBatch,
+    ApplyOffset,
+    ResnapHitObjects,
+    Batch
+}
+
 -- ./Quaver/Quaver.Shared/Scripting/ImGuiWrapper.cs
 function imgui.AcceptDragDropPayload(type) end
 function imgui.AcceptDragDropPayload(type, flags) end
