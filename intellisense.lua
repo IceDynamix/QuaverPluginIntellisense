@@ -1,4 +1,4 @@
--- LAST UPDATED: 2020-12-30
+-- LAST UPDATED: 2021-02-02
 
 -- ./ImGui.NET/src/ImGui.NET/Generated/ImGuiInputTextFlags.gen.cs
 imgui_input_text_flags = {
@@ -971,8 +971,37 @@ function map.GetNearestSnapTimeFromTime(forwards, snap, time) end
 -- ./Quaver/Quaver.Shared/Screens/Edit/Plugins/EditorPluginUtils.cs
 function utils.CreateScrollVelocity(time, multiplier) end
 function utils.CreateHitObject(startTime, lane, endTime, hitsounds, editorLayer) end
-function utils.CreateTimingPoint(startTime, bpm, signature) end
+function utils.CreateTimingPoint(startTime, bpm, signature, hidden) end
 function utils.CreateEditorLayer(name, hidden, colorRgb) end
+function utils.CreateEditorAction(type, args) end
+function utils.EditorActionPlaceHitObject() end
+function utils.EditorActionRemoveHitObject() end
+function utils.EditorActionResizeLongNote() end
+function utils.EditorActionRemoveHitObjectBatch() end
+function utils.EditorActionPlaceHitObjectBatch() end
+function utils.EditorActionCreateLayer() end
+function utils.EditorActionRemoveLayer() end
+function utils.EditorActionRenameLayer() end
+function utils.EditorActionMoveObjectsToLayer() end
+function utils.EditorActionChangeLayerColor() end
+function utils.EditorActionToggleLayerVisibility() end
+function utils.EditorActionAddScrollVelocity() end
+function utils.EditorActionRemoveScrollVelocity() end
+function utils.EditorActionAddScrollVelocityBatch() end
+function utils.EditorActionRemoveScrollVelocityBatch() end
+function utils.EditorActionAddTimingPoint() end
+function utils.EditorActionRemoveTimingPoint() end
+function utils.EditorActionAddTimingPointBatch() end
+function utils.EditorActionRemoveTimingPointBatch() end
+function utils.EditorActionChangeTimingPointOffset() end
+function utils.EditorActionChangeTimingPointBpm() end
+function utils.EditorActionResetTimingPoint() end
+function utils.EditorActionChangeTimingPointBpmBatch() end
+function utils.EditorActionChangeTimingPointOffsetBatch() end
+function utils.EditorActionChangeScrollVelocityOffsetBatch() end
+function utils.EditorActionChangeScrollVelocityMultiplierBatch() end
+function utils.EditorActionResnapHitObjects() end
+function utils.EditorActionBatch() end
 function utils.MillisecondsToTime(time) end
 function utils.IsKeyPressed(k) end
 function utils.IsKeyReleased(k) end
@@ -980,6 +1009,8 @@ function utils.IsKeyDown(k) end
 function utils.IsKeyUp(k) end
 
 -- ./Quaver/Quaver.Shared/Screens/Edit/Actions/EditorPluginActionManager.cs
+function actions.Perform(action) end
+function actions.PerformBatch(actions) end
 function actions.PlaceHitObject(h) end
 function actions.PlaceHitObject(lane, startTime, endTime, layer, hitsounds) end
 function actions.PlaceHitObjectBatch(hitObjects) end
@@ -996,6 +1027,7 @@ function actions.PlaceTimingPointBatch(tps) end
 function actions.RemoveTimingPointBatch(tps) end
 function actions.ChangeTimingPointOffset(tp, offset) end
 function actions.ChangeTimingPointBpm(tp, bpm) end
+function actions.ChangeTimingPointHidden(tp, hidden) end
 function actions.ChangeTimingPointBpmBatch(tps, bpm) end
 function actions.ChangeTimingPointOffsetBatch(tps, offset) end
 function actions.ResetTimingPoint(tp) end
@@ -1003,7 +1035,7 @@ function actions.GoToObjects(input) end
 function actions.SetHitObjectSelection(hitObjects) end
 function actions.DetectBpm() end
 function actions.SetPreviewTime(time) end
-function actions.CreateLayer(layer) end
+function actions.CreateLayer(layer, index) end
 function actions.RemoveLayer(layer) end
 function actions.RenameLayer(layer, name) end
 function actions.MoveHitObjectsToLayer(layer, hitObjects) end
